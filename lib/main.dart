@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:login/ui/screens/login.dart';
+import 'package:login/ui/screens/home_screen.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
+      debugShowCheckedModeBanner: false,
+      title: 'Surfing',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
     );
   }
 }
